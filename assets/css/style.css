@@ -30,6 +30,12 @@ html {
   margin-bottom: 4px;
 }
 
+h2 {
+  font-size: 20px;
+  color: var(--color-texto-primario);
+
+}
+
 h4 {
   font-weight: 600;
   font-size: 16px;
@@ -47,6 +53,7 @@ a {
 a:visited {
  color: var(--color-texto-primario);
 }
+
 /* Dia 01 - Seção de informações do perfil  */
 
 .container {
@@ -57,9 +64,12 @@ a:visited {
 .grid__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* grid-template-rows: 1fr 1fr; */
+  grid-template-rows: 1fr 1fr;
   grid-column-gap: 24px;
   grid-row-gap: 6px;
+  grid-template-areas: "perfil perfil"
+  "destaques destaques"
+  ;
 }
 
 #perfil {
@@ -67,6 +77,7 @@ a:visited {
   height: 468px;
   width: 780px;
   border-radius: 16px;
+  grid-area: perfil;
 }
 
 .perfil__imgs {
@@ -186,7 +197,6 @@ a:visited {
 
 .cabecalho__nav img {
   margin-right: 5px;
-  
 }
 
 .cabecalho__form {
@@ -222,7 +232,6 @@ font-size: 14px;
   font-size: 16px;
 }
 
-
 .material-symbols-outlined {
   color: var(--color-texto-primario);
 }
@@ -253,16 +262,82 @@ font-size: 14px;
 }
 
 
-@media (max-width: 1023px) {
+/* Dia 03 -  Publicações em Destaque */
 
+.section__container {
+  padding: 16px 24px;
+  background-color: var(--card-background);
+  border-radius: 16px;
+}
+
+#destaques {
+  width: 780px;
+  height: 312px;
+  grid-area: destaques;
+}
+
+.destaque__container {
+  border: var(--color-texto-secundario) 1px solid;
+  border-radius: 8px; 
+  padding:12px 0 4px 0;
+  width: 238px;
+  margin-top: 8px;
+}
+
+.destaque__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 17px;
+}
+
+.destaque__publi {
+padding: 0 14px;
+}
+
+.destaque__container span {
+  font-size: 12px;
+  color: var(--color-texto-secundario);
+}
+
+.destaque__container p {
+  font-size: 14px;
+  color: var(--color-texto-primario);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.destaque__img{
+  height: 152px;
+  width: 100%;
+  object-fit: cover;
+  margin-top: .4rem;
+}
+
+.destaque__engajamento {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+}
+
+.destaque__engajamento div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Responsividade */
+
+@media (max-width: 1023px) {
   .cabecalho__lista span {
     display: none;
   }
   .cabecalho__input {
     /* display: none; */
   }
-  #perfil {
+  #perfil, #destaques {
     display: none;
   }
-
 }
