@@ -23,17 +23,10 @@ html {
   background-color: var(--body-background);
 }
 
-.span {
-  font-weight: 700;
-  font-size: 14px;
-  color: var(--color--azul);
-  margin-bottom: 4px;
-}
-
 h2 {
   font-size: 20px;
   color: var(--color-texto-primario);
-
+  margin-bottom: 8px;
 }
 
 h4 {
@@ -51,7 +44,50 @@ a {
 }
 
 a:visited {
- color: var(--color-texto-primario);
+  color: var(--color-texto-primario);
+}
+
+p {
+  font-size: 14px;
+  color: var(--color-texto-primario);
+}
+
+.span {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color--azul);
+  margin-bottom: 4px;
+}
+
+.span--separador::before {
+  content: "\00B7";
+  color: var(--color-texto-secundario);
+  text-decoration: none;
+}
+
+.section__container {
+  padding: 16px 24px;
+  background-color: var(--card-background);
+  border-radius: 16px;
+  width: 780px;
+}
+
+.container__engajamento {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+}
+
+.container__reacoes {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.container__engajamento span {
+  font-size: 12px;
+  color: var(--color-texto-secundario);
 }
 
 /* Dia 01 - Seção de informações do perfil  */
@@ -64,12 +100,13 @@ a:visited {
 .grid__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
   grid-column-gap: 24px;
   grid-row-gap: 6px;
-  grid-template-areas: "perfil perfil"
-  "destaques destaques"
-  ;
+  grid-template-areas:
+    "perfil perfil"
+    "destaques destaques"
+    "atividades atividades";
 }
 
 #perfil {
@@ -101,7 +138,6 @@ a:visited {
   height: 50%;
   padding: 56px 87px 24px 24px;
   color: var(--color-texto-primario);
-
   display: flex;
   justify-content: space-between;
   line-height: 20px;
@@ -122,12 +158,6 @@ a:visited {
 
 .perfil__dados .span:hover {
   text-decoration: underline;
-}
-
-.span--separador::before {
-  content: "\00B7";
-  color: var(--color-texto-secundario);
-  text-decoration: none;
 }
 
 .perfil__btns button {
@@ -200,27 +230,27 @@ a:visited {
 }
 
 .cabecalho__form {
-  width: 447px;  
+  width: 447px;
   height: 34px;
 }
 
 .cabecalho__form i {
-position: absolute;
-text-align: center;
-height: 24px;
-text-align: left;
-margin: 5px;
+  position: absolute;
+  text-align: center;
+  height: 24px;
+  text-align: left;
+  margin: 5px;
 }
 
 .cabecalho__form input {
-background-color: var(--color-input);
-padding: 0 10px 0 35px;
-width: 280px;
-height: 34px;
-border: none;
-border-radius: 4px;
-transition: .5s;
-font-size: 14px;
+  background-color: var(--color-input);
+  padding: 0 10px 0 35px;
+  width: 280px;
+  height: 34px;
+  border: none;
+  border-radius: 4px;
+  transition: 0.5s;
+  font-size: 14px;
 }
 
 .cabecalho__input::placeholder {
@@ -261,27 +291,18 @@ font-size: 14px;
   color: var(--color-texto-primario);
 }
 
-
 /* Dia 03 -  Publicações em Destaque */
 
-.section__container {
-  padding: 16px 24px;
-  background-color: var(--card-background);
-  border-radius: 16px;
-}
-
 #destaques {
-  width: 780px;
   height: 312px;
   grid-area: destaques;
 }
 
 .destaque__container {
   border: var(--color-texto-secundario) 1px solid;
-  border-radius: 8px; 
-  padding:12px 0 4px 0;
+  border-radius: 8px;
+  padding: 12px 0 4px 0;
   width: 238px;
-  margin-top: 8px;
 }
 
 .destaque__flex {
@@ -292,7 +313,7 @@ font-size: 14px;
 }
 
 .destaque__publi {
-padding: 0 14px;
+  padding: 0 14px;
 }
 
 .destaque__container span {
@@ -301,31 +322,55 @@ padding: 0 14px;
 }
 
 .destaque__container p {
-  font-size: 14px;
-  color: var(--color-texto-primario);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.destaque__img{
+.destaque__img {
   height: 152px;
   width: 100%;
   object-fit: cover;
-  margin-top: .4rem;
+  margin-top: 0.4rem;
 }
 
-.destaque__engajamento {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 4px;
+/* Dia 04 - Seções Atividades */
+#atividades {
+  height: 371px;
+  grid-area: atividades;
 }
 
-.destaque__engajamento div {
+.atividade__publicacao {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
+}
+
+.atividade__id {
+  margin: 13px 0 8px;
+  color: var(--color-texto-secundario);
+  font-size: 14px;
+}
+
+.borda {
+  border-bottom: 1px solid #ffffff99;
+}
+
+.atividades__arrow {
+  display: block;
+  margin: 8px 0;
+  font-size: 14px;
+  color: var(--color-texto-secundario);
+  text-align: center;
+  font-weight: 500;
+}
+.atividades__arrow::after {
+  content: "\2192";
+}
+
+#atividades span:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Responsividade */
@@ -337,7 +382,8 @@ padding: 0 14px;
   .cabecalho__input {
     /* display: none; */
   }
-  #perfil, #destaques {
+  #perfil,
+  #destaques {
     display: none;
   }
 }
