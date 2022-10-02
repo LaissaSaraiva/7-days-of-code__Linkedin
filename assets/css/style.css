@@ -50,6 +50,7 @@ a:visited {
 p {
   font-size: 14px;
   color: var(--color-texto-primario);
+  text-align: justify;
 }
 
 .span {
@@ -88,6 +89,11 @@ p {
 .container__engajamento span {
   font-size: 12px;
   color: var(--color-texto-secundario);
+}
+
+span:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Dia 01 - Seção de informações do perfil  */
@@ -154,10 +160,6 @@ p {
   font-size: 14px;
   margin-bottom: 4px;
   display: inline-block;
-}
-
-.perfil__dados .span:hover {
-  text-decoration: underline;
 }
 
 .perfil__btns button {
@@ -366,11 +368,6 @@ p {
 }
 .atividades__arrow::after {
   content: "\2192";
-}
-
-#atividades span:hover {
-  text-decoration: underline;
-  cursor: pointer;
 }
 
 /* Responsividade */
