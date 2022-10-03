@@ -15,4 +15,4 @@ Abordando conceitos básicos como 'div', 'section', inline para imagens, medidas
 Acesse o protótipo do site no 
 [Figma](https://www.figma.com/file/YNrQbgrdCBM7tDd6CfpBmm/7days---HTML-e-CSS-(Linkedin)).
 
-![Protótipo do site no Figma]()
+![Protótipo do site no Figma](./assets/imgs/Linkedin__desktop.png)
