@@ -29,6 +29,11 @@ h2 {
   margin-bottom: 8px;
 }
 
+h3 {
+  font-size: 16px;
+  color: var(--color-texto-primario);
+}
+
 h4 {
   font-weight: 600;
   font-size: 16px;
@@ -51,6 +56,11 @@ p {
   font-size: 14px;
   color: var(--color-texto-primario);
   text-align: justify;
+}
+
+span {
+  font-size: 14px;
+  color: var(--color-texto-secundario);
 }
 
 .span {
@@ -112,7 +122,9 @@ span:hover {
   grid-template-areas:
     "perfil perfil"
     "destaques destaques"
-    "atividades atividades";
+    "atividades atividades"
+    "sobre sobre"
+    "experiencias experiencias";
 }
 
 #perfil {
@@ -368,6 +380,51 @@ span:hover {
 }
 .atividades__arrow::after {
   content: "\2192";
+}
+
+/* Dia 04 - Seção Sobre */
+
+#sobre {
+  grid-area: sobre;
+}
+
+/* Dia 05 - Seção Experiências */
+
+#experiencias{
+  height: 358px;
+  grid-area: experiencias;
+}
+
+#experiencias span {
+  display: block;
+}
+
+#experiencias span:hover {
+  text-decoration: none;
+  cursor: auto;
+ }
+ 
+.container__empresa {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.experiencia__cargo {
+  color: var(--color-texto-primario);
+}
+
+
+.experiencia__lista li{
+  display: flex;
+  gap: 28px;
+  margin-left: 20px;
+  margin-top: 4px;
+}
+
+.experiencia__lista img {
+  width: 9px;
+  height: 71px;
 }
 
 /* Responsividade */
