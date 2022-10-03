@@ -124,7 +124,9 @@ span:hover {
     "destaques destaques"
     "atividades atividades"
     "sobre sobre"
-    "experiencias experiencias";
+    "experiencias experiencias"
+    "formacao formacao"
+    "idiomas idiomas";
 }
 
 #perfil {
@@ -399,7 +401,7 @@ span:hover {
   display: block;
 }
 
-#experiencias span:hover {
+#experiencias span:hover, #formacao span:hover  {
   text-decoration: none;
   cursor: auto;
  }
@@ -412,6 +414,7 @@ span:hover {
 
 .experiencia__cargo {
   color: var(--color-texto-primario);
+  display: block;
 }
 
 
@@ -427,6 +430,25 @@ span:hover {
   height: 71px;
 }
 
+/* Dia 06 -  Seções Formação acadêmica e Idiomas */
+
+#formacao {
+  grid-area: formacao;
+}
+
+#idioma {
+  grid-area: idiomas;
+}
+.container__empresa img {
+  width: 48px; 
+  height:48px ; 
+  object-fit: cover;
+}
+
+.idiomas__container {
+  padding: 12px 0;
+}
+
 /* Responsividade */
 
 @media (max-width: 1023px) {
@@ -434,10 +456,10 @@ span:hover {
     display: none;
   }
   .cabecalho__input {
-    /* display: none; */
+    display: none;
   }
   #perfil,
-  #destaques {
+  #destaques, #atividades, #sobre, #experiencias, #formacao, #idiomas {
     display: none;
   }
 }
