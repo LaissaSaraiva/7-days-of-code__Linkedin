@@ -96,16 +96,11 @@ span {
   color: var(--color-texto-secundario);
 }
 
-span:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
 
 /* Dia 01 - Seção de informações do perfil  */
 
 .container {
-  padding-left: 154px;
-  padding-top: 24px;
+  padding: 24px 0 24px 154px;
 }
 
 .flex__container {
@@ -214,10 +209,6 @@ span:hover {
 .perfil__institutos img {
   width: 32px;
   height: 32px;
-}
-
-.perfil__institutos h4:hover {
-  text-decoration: underline;
 }
 
 /* Dia 02 - Navbar */
@@ -390,12 +381,6 @@ span:hover {
   display: block;
 }
 
-#experiencias span:hover,
-#formacao span:hover {
-  text-decoration: none;
-  cursor: auto;
-}
-
 .container__infos {
   display: flex;
   align-items: flex-start;
@@ -460,6 +445,15 @@ span:hover {
 .margin__top {
   margin-top: 16px;
 }
+
+/*  Footer */
+
+#footer {
+  padding: 10px 0;
+ 
+  text-align: center;
+}
+
 
 /* Responsividade */
 
