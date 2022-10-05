@@ -78,7 +78,6 @@ span {
   width: 780px;
 }
 
-
 .container__engajamento {
   display: flex;
   align-items: center;
@@ -109,19 +108,22 @@ span:hover {
   padding-top: 24px;
 }
 
-.grid__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-   grid-column-gap: 24px;
-  grid-row-gap: 6px;
-  grid-template-areas:
-    "perfil sugestoes"
-    "destaques sugestoes__conexoes"
-    "atividades atividades"
-    "sobre sobre"
-    "experiencias experiencias"
-    "formacao formacao"
-    "idiomas idiomas";
+.flex__container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+}
+
+.main__esquerdo,
+.main__direito {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.main__direito {
+  justify-content: flex-start;
 }
 
 #perfil {
@@ -129,7 +131,6 @@ span:hover {
   height: 468px;
   width: 780px;
   border-radius: 16px;
-  grid-area: perfil;
 }
 
 .perfil__imgs {
@@ -306,7 +307,6 @@ span:hover {
 
 #destaques {
   height: 312px;
-  grid-area: destaques;
 }
 
 .destaque__container {
@@ -348,7 +348,6 @@ span:hover {
 /* Dia 04 - Seções Atividades */
 #atividades {
   height: 371px;
-  grid-area: atividades;
 }
 
 .atividade__publicacao {
@@ -381,15 +380,10 @@ span:hover {
 
 /* Dia 04 - Seção Sobre */
 
-#sobre {
-  grid-area: sobre;
-}
-
 /* Dia 05 - Seção Experiências */
 
 #experiencias {
   height: 358px;
-  grid-area: experiencias;
 }
 
 #experiencias span {
@@ -427,14 +421,6 @@ span:hover {
 
 /* Dia 06 -  Seções Formação acadêmica e Idiomas */
 
-#formacao {
-  grid-area: formacao;
-}
-
-#idiomas {
-  grid-area: idiomas;
-}
-
 .container__infos img {
   width: 48px;
   height: 48px;
@@ -447,12 +433,6 @@ span:hover {
 
 /*  Dia 07 - Sugestões de Conexões */
 
-#sugestoes {
-  grid-area: sugestoes;
-  grid-column: 2;
-  grid-row: 1;
-}
-
 #sugestoes span {
   font-size: 12px;
 }
@@ -463,7 +443,6 @@ span:hover {
   border-radius: 16px;
   width: 320px;
 }
-
 
 .container__infos button {
   border-radius: 18px;
@@ -482,11 +461,6 @@ span:hover {
   margin-top: 16px;
 }
 
-#sugestoes__conexoes {
-  grid-area: sugestoes__conexoes;
-  grid-column: 2;
-  grid-row: auto;
-}
 /* Responsividade */
 
 @media (max-width: 1023px) {
