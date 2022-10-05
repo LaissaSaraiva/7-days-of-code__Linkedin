@@ -34,11 +34,6 @@ h3 {
   color: var(--color-texto-primario);
 }
 
-h4 {
-  font-weight: 600;
-  font-size: 16px;
-}
-
 li {
   list-style: none;
 }
@@ -83,6 +78,7 @@ span {
   width: 780px;
 }
 
+
 .container__engajamento {
   display: flex;
   align-items: center;
@@ -116,12 +112,11 @@ span:hover {
 .grid__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* grid-template-rows: 1fr 1fr; */
-  grid-column-gap: 24px;
+   grid-column-gap: 24px;
   grid-row-gap: 6px;
   grid-template-areas:
-    "perfil perfil"
-    "destaques destaques"
+    "perfil sugestoes"
+    "destaques sugestoes__conexoes"
     "atividades atividades"
     "sobre sobre"
     "experiencias experiencias"
@@ -392,7 +387,7 @@ span:hover {
 
 /* Dia 05 - Seção Experiências */
 
-#experiencias{
+#experiencias {
   height: 358px;
   grid-area: experiencias;
 }
@@ -401,14 +396,15 @@ span:hover {
   display: block;
 }
 
-#experiencias span:hover, #formacao span:hover  {
+#experiencias span:hover,
+#formacao span:hover {
   text-decoration: none;
   cursor: auto;
- }
- 
-.container__empresa {
+}
+
+.container__infos {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
 }
 
@@ -417,8 +413,7 @@ span:hover {
   display: block;
 }
 
-
-.experiencia__lista li{
+.experiencia__lista li {
   display: flex;
   gap: 28px;
   margin-left: 20px;
@@ -436,12 +431,13 @@ span:hover {
   grid-area: formacao;
 }
 
-#idioma {
+#idiomas {
   grid-area: idiomas;
 }
-.container__empresa img {
-  width: 48px; 
-  height:48px ; 
+
+.container__infos img {
+  width: 48px;
+  height: 48px;
   object-fit: cover;
 }
 
@@ -449,6 +445,48 @@ span:hover {
   padding: 12px 0;
 }
 
+/*  Dia 07 - Sugestões de Conexões */
+
+#sugestoes {
+  grid-area: sugestoes;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#sugestoes span {
+  font-size: 12px;
+}
+
+.sugestoes__container {
+  padding: 16px;
+  background-color: var(--card-background);
+  border-radius: 16px;
+  width: 320px;
+}
+
+
+.container__infos button {
+  border-radius: 18px;
+  padding: 7px 16px;
+  border: 1px solid var(--color-texto-primario);
+  background-color: transparent;
+  color: var(--color-texto-primario);
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 7px;
+  cursor: pointer;
+  display: block;
+}
+
+.margin__top {
+  margin-top: 16px;
+}
+
+#sugestoes__conexoes {
+  grid-area: sugestoes__conexoes;
+  grid-column: 2;
+  grid-row: auto;
+}
 /* Responsividade */
 
 @media (max-width: 1023px) {
@@ -459,7 +497,12 @@ span:hover {
     display: none;
   }
   #perfil,
-  #destaques, #atividades, #sobre, #experiencias, #formacao, #idiomas {
+  #destaques,
+  #atividades,
+  #sobre,
+  #experiencias,
+  #formacao,
+  #idiomas {
     display: none;
   }
 }
