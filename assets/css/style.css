@@ -75,7 +75,7 @@ span {
   padding: 16px 24px;
   background-color: var(--card-background);
   border-radius: 16px;
-  width: 780px;
+  max-width: 780px;
 }
 
 .container__engajamento {
@@ -123,22 +123,22 @@ span {
 
 #perfil {
   background-color: var(--card-background);
-  height: 468px;
-  width: 780px;
+  /* height: 468px; */
+  max-width: 780px;
   border-radius: 16px;
 }
 
 .perfil__imgs {
   background-image: url("../imgs/profile-background.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 50%;
+  width: 100%;
 }
 
 .perfil__imgs img {
   position: relative;
   left: 24px;
-  top: 118px;
+  top: 60px;
   width: 160px;
   height: 160px;
   border-radius: 50%;
@@ -146,10 +146,10 @@ span {
 }
 
 .perfil__infos {
-  height: 50%;
   padding: 56px 87px 24px 24px;
   color: var(--color-texto-primario);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   line-height: 20px;
 }
@@ -296,9 +296,6 @@ span {
 
 /* Dia 03 -  Publicações em Destaque */
 
-#destaques {
-  height: 312px;
-}
 
 .destaque__container {
   border: var(--color-texto-secundario) 1px solid;
@@ -337,9 +334,6 @@ span {
 }
 
 /* Dia 04 - Seções Atividades */
-#atividades {
-  height: 371px;
-}
 
 .atividade__publicacao {
   display: flex;
@@ -373,9 +367,6 @@ span {
 
 /* Dia 05 - Seção Experiências */
 
-#experiencias {
-  height: 358px;
-}
 
 #experiencias span {
   display: block;
@@ -449,11 +440,14 @@ span {
 /*  Footer */
 
 #footer {
-  padding: 10px 0;
- 
   text-align: center;
 }
 
+.footer__creditos {
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 400px ;
+}
 
 /* Responsividade */
 
@@ -461,16 +455,51 @@ span {
   .cabecalho__lista span {
     display: none;
   }
-  .cabecalho__input {
+ #cabecalho {
     display: none;
   }
-  #perfil,
-  #destaques,
-  #atividades,
-  #sobre,
-  #experiencias,
-  #formacao,
-  #idiomas {
-    display: none;
-  }
+ 
+.perfil__imgs img {
+  position: relative;
+  top: 20px;
+  left: 12px;
+  width: 152px;
+  height: 152px;
 }
+
+.perfil__infos {
+gap: 20px;
+padding: 24px;
+  }
+
+  .perfil__btns button {
+    width: 119px;
+    padding: 6px 25px;
+  }
+  .container {
+    padding: 20px;
+  }
+
+  .flex__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+.main__direito  {
+  display: none;
+}
+
+.section__container {
+  min-width: 290px;
+}
+
+.destaque__flex {
+flex-direction: column;
+align-items: center;
+}
+
+.footer__creditos {
+  min-width: 290px;
+}
+}
+ 
