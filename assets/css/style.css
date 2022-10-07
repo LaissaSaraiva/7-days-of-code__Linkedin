@@ -130,7 +130,7 @@ span {
 
 .perfil__imgs {
   background-image: url("../imgs/profile-background.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
 }
@@ -459,6 +459,7 @@ span {
     display: none;
   }
  
+
 .perfil__imgs img {
   position: relative;
   top: 20px;
