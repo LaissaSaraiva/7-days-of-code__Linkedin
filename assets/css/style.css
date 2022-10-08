@@ -106,20 +106,17 @@ span {
 .flex__container {
   display: flex;
   flex-direction: row;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .main__esquerdo,
 .main__direito {
-  display: flex;
-  justify-content: center;
+  display: flex; 
+  justify-content: flex-start; 
   flex-direction: column;
   gap: 8px;
 }
 
-.main__direito {
-  justify-content: flex-start;
-}
 
 #perfil {
   background-color: var(--card-background);
@@ -130,9 +127,10 @@ span {
 
 .perfil__imgs {
   background-image: url("../imgs/profile-background.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  border-radius: 16px 16px 0 0;
 }
 
 .perfil__imgs img {
@@ -221,11 +219,16 @@ span {
 .cabecalho__nav {
   height: 52px;
   display: flex;
-  justify-content: flex-start;
   flex-direction: row;
-  align-items: center;
-  width: 1128px;
+  justify-content: space-between;
   margin: 0 125px;
+  max-width: 900px;
+}
+
+.cabecalho__nav > div {
+display: flex;
+align-items: center;
+gap: 8px;
 }
 
 .cabecalho__nav img {
@@ -233,7 +236,6 @@ span {
 }
 
 .cabecalho__form {
-  width: 447px;
   height: 34px;
 }
 
@@ -261,7 +263,7 @@ span {
 }
 
 .cabecalho__input:focus {
-  width: 384px;
+  width: 328px;
   font-size: 16px;
 }
 
@@ -451,14 +453,36 @@ span {
 
 /* Responsividade */
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .cabecalho__lista span {
     display: none;
   }
- #cabecalho {
+ /* #cabecalho {
     display: none;
-  }
+  } */
  
+  .cabecalho__nav {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+
+  .cabecalho__form input {
+    width:0px;
+  }
+
+  .cabecalho__input:focus {
+   width: 100%;
+ }
+
+  /* .cabecalho__lista li:nth-child(n + 4) {
+    display: none;
+  } */
+
+  /* .cabecalho__lista li {
+    display: none;
+  } */
+
 
 .perfil__imgs img {
   position: relative;
