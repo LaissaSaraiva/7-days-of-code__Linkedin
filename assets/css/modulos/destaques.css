@@ -1,0 +1,46 @@
+
+/* Dia 03 -  Publicações em Destaque */
+.destaque__container {
+  border: var(--color-texto-secundario) 1px solid;
+  border-radius: 8px;
+  padding: 12px 0 4px 0;
+  width: 238px;
+}
+
+.destaque__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 17px;
+}
+
+.destaque__publi {
+  padding: 0 14px;
+}
+
+.destaque__container span {
+  font-size: 12px;
+  color: var(--color-texto-secundario);
+}
+
+.destaque__container p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.destaque__img {
+  height: 152px;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 0.4rem;
+}
+
+/* Responsividade */
+
+@media (max-width: 1024px) {
+  .destaque__flex {
+    flex-direction: column;
+    align-items: center;
+ }  
+}

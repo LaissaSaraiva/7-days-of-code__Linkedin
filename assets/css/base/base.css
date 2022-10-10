@@ -1,0 +1,97 @@
+@import url(../layout/layout.css);
+@import url(../modulos/cabecalho.css);
+@import url(../modulos/perfil.css);
+@import url(../modulos/destaques.css);
+@import url(../modulos/atividades.css);
+@import url(../modulos/sobre.css);
+@import url(../modulos/experiencias.css);
+@import url(../modulos/formacao_idiomas.css);
+@import url(../modulos/sugestoes.css);
+@import url(../modulos/rodape.css);
+
+
+:root {
+  --body-background: #000000;
+  --card-background: #1b2226;
+  --color--azul: #70b5f9;
+  --color-azul-secundario: #0a66c2;
+  --color-texto-primario: rgb(255, 255, 255, 0.9);
+  --color-texto-secundario: rgba(255, 255, 255, 0.6);
+  --color-texto-escuro: rgba(0, 0, 0, 0.75);
+  --color-input: #38434f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: var(--body-background);
+}
+
+main {
+  overflow-x: auto;
+}
+
+h2 {
+  font-size: 20px;
+  color: var(--color-texto-primario);
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 16px;
+  color: var(--color-texto-primario);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:visited {
+  color: var(--color-texto-primario);
+}
+
+p {
+  font-size: 14px;
+  color: var(--color-texto-primario);
+  text-align: justify;
+}
+
+span {
+  font-size: 14px;
+  color: var(--color-texto-secundario);
+}
+
+.span {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color--azul);
+  margin-bottom: 4px;
+}
+
+.span--separador::before {
+  content: "\00B7";
+  color: var(--color-texto-secundario);
+  text-decoration: none;
+}
+
+.borda {
+  border-bottom: 1px solid #ffffff99;
+}
+
+.margin__top {
+  margin-top: 16px;
+}
+

@@ -1,0 +1,27 @@
+/* Dia 05 - Seção Experiências */
+#experiencias span {
+  display: block;
+}
+
+.container__infos {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.experiencia__cargo {
+  color: var(--color-texto-primario);
+  display: block;
+}
+
+.experiencia__lista li {
+  display: flex;
+  gap: 28px;
+  margin-left: 20px;
+  margin-top: 4px;
+}
+
+.experiencia__lista img {
+  width: 9px;
+  height: 71px;
+}

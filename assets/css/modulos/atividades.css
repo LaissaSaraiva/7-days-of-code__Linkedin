@@ -1,0 +1,26 @@
+/* Dia 04 - Seções Atividades */
+
+.atividade__publicacao {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.atividade__id {
+  margin: 13px 0 8px;
+  color: var(--color-texto-secundario);
+  font-size: 14px;
+}
+
+.atividades__arrow {
+  display: block;
+  margin: 8px 0;
+  font-size: 14px;
+  color: var(--color-texto-secundario);
+  text-align: center;
+  font-weight: 500;
+}
+
+.atividades__arrow::after {
+  content: "\2192";
+}

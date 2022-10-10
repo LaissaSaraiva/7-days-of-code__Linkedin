@@ -1,0 +1,136 @@
+/* Dia 02 - Navbar */
+
+#cabecalho {
+  background-color: var(--card-background);
+  padding: 0 24px;
+}
+
+.cabecalho__nav {
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 125px;
+  max-width: 900px;
+}
+
+.cabecalho__nav > div {
+display: flex;
+align-items: center;
+gap: 8px;
+}
+
+.cabecalho__nav img {
+  margin-right: 5px;
+}
+
+.cabecalho__form {
+  height: 34px;
+}
+
+.cabecalho__form i {
+  position: absolute;
+  text-align: center;
+  height: 24px;
+  text-align: left;
+  margin: 5px;
+}
+
+.cabecalho__form input {
+  background-color: var(--color-input);
+  padding: 0 10px 0 35px;
+  width: 280px;
+  height: 34px;
+  border: none;
+  border-radius: 4px;
+  transition: 0.5s;
+  font-size: 14px;
+}
+
+.cabecalho__input::placeholder {
+  color: var(--color-texto-primario);
+}
+
+.cabecalho__input:focus {
+  width: 328px;
+  font-size: 16px;
+}
+
+.material-symbols-outlined {
+  color: var(--color-texto-primario);
+}
+
+.cabecalho__lista {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cabecalho__lista li:last-child {
+  border-left: solid 1px var(--color-texto-primario);
+}
+
+.cabecalho__lista a {
+  width: 80px;
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: baseline;
+  justify-content: center;
+}
+
+.cabecalho__lista span {
+  font-size: 12px;
+  color: var(--color-texto-primario);
+}
+
+/* Responsividade */
+
+@media (max-width: 1024px) {
+  .cabecalho__lista span {
+    display: none;
+  }
+ 
+  .cabecalho__nav {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .cabecalho__form input {
+    width:10px;
+    background-color: transparent;
+  }
+
+  .cabecalho__input:focus {
+   width: 100%;
+ }
+
+}
+
+
+@media (max-width: 425px) {
+
+  .cabecalho__nav {
+    justify-content: flex-start;
+  }
+
+  .cabecalho__lista a  {
+    width: 60px;
+  }
+  .cabecalho__lista li:nth-child(n + 6) {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .cabecalho__lista li:nth-child(n + 5) {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .cabecalho__lista li:nth-child(n + 4) {
+    display: none;
+  }
+}

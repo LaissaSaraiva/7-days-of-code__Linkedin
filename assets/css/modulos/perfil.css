@@ -1,0 +1,113 @@
+/* Dia 01 - Seção de informações do perfil  */
+#perfil {
+  background-color: var(--card-background);
+  /* height: 468px; */
+  max-width: 780px;
+  border-radius: 16px;
+}
+
+.perfil__imgs {
+  background-image: url("/assets/imgs/profile-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+
+.perfil__imgs img {
+  position: relative;
+  left: 24px;
+  top: 60px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: var(--card-background) solid 1px;
+}
+
+.perfil__infos {
+  padding: 56px 87px 24px 24px;
+  color: var(--color-texto-primario);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  line-height: 20px;
+}
+
+.perfil__dados h1 {
+  font-weight: 600;
+  margin-bottom: 4px;
+  line-height: 30px;
+}
+
+.perfil__dados p {
+  color: var(--color-texto-secundario);
+  font-size: 14px;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+.perfil__btns button {
+  width: 128px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 16px;
+  border: 1px solid var(--color--azul);
+  padding: 6px 29px;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.btn__msg {
+  background-color: var(--color--azul);
+  color: var(--color-texto-escuro);
+}
+
+.btn__msg:hover {
+  background-color: var(--color-azul-secundario);
+  border: 2px solid var(--color-azul-secundario);
+  color: var(--color-texto-primario);
+}
+
+.btn__mais {
+  color: var(--color--azul);
+  background-color: transparent;
+}
+
+.btn__mais:hover {
+  border: 2px solid var(--color-azul-secundario);
+  color: var(--color-texto-primario);
+}
+
+.perfil__institutos div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.perfil__institutos img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Responsividade */
+
+@media (max-width: 1024px) {
+  .perfil__imgs img {
+    position: relative;
+    top: 20px;
+    left: 12px;
+    width: 152px;
+    height: 152px;
+  }
+
+  .perfil__infos {
+    gap: 20px;
+    padding: 24px;
+  }
+
+  .perfil__btns button {
+    width: 119px;
+    padding: 6px 25px;
+  }
+}

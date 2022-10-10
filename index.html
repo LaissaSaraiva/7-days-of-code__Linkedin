@@ -10,7 +10,7 @@
       href="./assets/imgs/linkedin.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/base/base.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,7 +29,11 @@
           <a><img src="./assets/imgs/logo-linkedin.svg" alt="" srcset="" /></a>
           <form class="cabecalho__form">
             <i class="material-symbols-outlined"> Search</i>
-            <input class="cabecalho__input" type="text" placeholder="Pesquisar" />
+            <input
+              class="cabecalho__input"
+              type="text"
+              placeholder="Pesquisar"
+            />
           </form>
         </div>
 
@@ -74,378 +78,391 @@
       </nav>
     </header>
     <main class="container flex__container">
-        <div class="main__esquerdo">
-          <section id="perfil">
-            <div class="perfil__imgs">
-              <img src="./assets/imgs/profile_picture.png" alt="Foto de Perfil" />
-            </div>
-            <div class="perfil__infos">
-              <div class="perfil__dados">
-                <h1>Nome Sobrenome</h1>
-                <h3>Desenvolvedora | HTML | CSS | Typescript | Node</h3>
-                <p>Fala sobre #javascript, #frontend, #reactjs, e #backend</p>
-                <br />
-                <p>Cidade, estado e país</p>
-                <span class="span--separador"></span>
-                <span class="span"> informações de contato</span><br /><span
-                  class="span"
-                  >??? seguidores </span
-                ><span class="span--separador"></span>
-                <span class="span"> ??? conexões</span>
-                <div class="perfil__btns">
-                  <button class="btn__msg">Mensagem</button>
-                  <button class="btn__mais">Mais</button>
-                </div>
-              </div>
-              <div class="perfil__institutos">
-                <div>
-                  <img src="./assets/imgs/empresa-foto.png" alt="" srcset="" />
-                  <h3>Empresa</h3>
-                </div>
-                <div>
-                  <img
-                    src="./assets/imgs/profile-institution.png"
-                    alt=""
-                    srcset=""
-                  />
-                  <h3>Instituição de Ensino</h3>
-                </div>
+      <div class="main__esquerdo">
+        <section id="perfil">
+          <div class="perfil__imgs">
+            <img src="./assets/imgs/profile_picture.png" alt="Foto de Perfil" />
+          </div>
+          <div class="perfil__infos">
+            <div class="perfil__dados">
+              <h1>Nome Sobrenome</h1>
+              <h3>Desenvolvedora | HTML | CSS | Typescript | Node</h3>
+              <p>Fala sobre #javascript, #frontend, #reactjs, e #backend</p>
+              <br />
+              <p>Cidade, estado e país</p>
+              <span class="span--separador"></span>
+              <span class="span"> informações de contato</span><br /><span
+                class="span"
+                >??? seguidores </span
+              ><span class="span--separador"></span>
+              <span class="span"> ??? conexões</span>
+              <div class="perfil__btns">
+                <button class="btn__msg">Mensagem</button>
+                <button class="btn__mais">Mais</button>
               </div>
             </div>
-          </section>
-  
-          <section id="destaques" class="section__container">
-            <h2>Destaques</h2>
-            <div class="destaque__flex">
-              <article class="destaque__container">
-                <div class="destaque__publi">
-                  <span>Publicação</span>
-                  <p>Legenda da primeira publicação do LinkedIn</p>
-                </div>
-                <img
-                  class="destaque__img"
-                  src="./assets/imgs/publicacao-1.jpg"
-                  alt="Publicação Linkedin"
-                />
-                <div class="container__engajamento">
-                  <div class="container__reacoes">
-                    <img
-                      src="./assets/imgs/Reações.png"
-                      alt=""
-                      srcset="ícone das reações"
-                    />
-                    <span>121</span>
-                  </div>
-                  <span>200 comentários</span>
-                </div>
-              </article>
-  
-              <article class="destaque__container">
-                <div class="destaque__publi">
-                  <span>Publicação</span>
-                  <p>Legenda da segunda publicação do LinkedIn</p>
-                </div>
-                <img
-                  class="destaque__img"
-                  src="./assets/imgs/publicacao-2.jpg"
-                  alt="Publicação Linkedin"
-                />
-                <div class="container__engajamento">
-                  <div class="container__reacoes">
-                    <img
-                      src="./assets/imgs/Reações.png"
-                      alt=""
-                      srcset="ícone das reações"
-                    />
-                    <span>11</span>
-                  </div>
-  
-                  <span>20 comentários</span>
-                </div>
-              </article>
-  
-              <article class="destaque__container">
-                <div class="destaque__publi">
-                  <span>Publicação</span>
-                  <p>Legenda da terceira publicação do LinkedIn</p>
-                </div>
-                <img
-                  class="destaque__img"
-                  src="./assets/imgs/publicacao-3.jpg"
-                  alt="Publicação Linkedin"
-                />
-                <div class="container__engajamento">
-                  <div class="container__reacoes">
-                    <img
-                      src="./assets/imgs/Reações.png"
-                      alt=""
-                      srcset="ícone das reações"
-                    />
-                    <span>115</span>
-                  </div>
-  
-                  <span>220 comentários</span>
-                </div>
-              </article>
-            </div>
-          </section>
-  
-          <section id="atividades" class="section__container">
-            <h2>Atividades</h2>
-            <span class="span">??? seguidores</span>
-            <article>
-              <div class="atividade__id">
-                <span>Nome e Sobrenome publicou isso</span>
-                <span class="span--separador"></span>
-                <span>1 sem</span>
-              </div>
-              <div class="atividade__publicacao">
-                <img
-                  src="./assets/imgs/atividade-1.png"
-                  alt="Exemplo de Publicação 1"
-                />
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-                  libero tempore nihil laudantium aperiam nulla dolore minima!
-                  Consequuntur veritatis quibusdam quod commodi laborum quia,
-                  similique sapiente iusto! Nisi reprehenderit laborum tempore!
-                  Velit molestiae dolor quod accusantium veritatis eaque itaque
-                  culpa animi, a alias nam? Doloribus?
-                </p>
-              </div>
-              <div class="container__engajamento borda">
-                <div class="container__reacoes">
-                  <img
-                    src="./assets/imgs/Reações.png"
-                    alt=""
-                    srcset="ícone das reações"
-                  />
-                  <span>121</span>
-                </div>
-                <span>200 comentários</span>
-              </div>
-            </article>
-            <article>
-              <div class="atividade__id">
-                <span>Nome e Sobrenome publicou isso</span>
-                <span class="span--separador"></span>
-                <span>1 sem</span>
-              </div>
-              <div class="atividade__publicacao">
-                <img
-                  src="./assets/imgs/atividade-2.png"
-                  alt="Exemplo de Publicação 2"
-                />
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-                  libero tempore nihil laudantium aperiam nulla dolore minima!
-                  Consequuntur veritatis quibusdam quod commodi laborum quia,
-                  similique sapiente iusto! Nisi reprehenderit laborum tempore!
-                  Velit molestiae dolor quod accusantium veritatis eaque itaque
-                  culpa animi, a alias nam? Doloribus?
-                </p>
-              </div>
-              <div class="container__engajamento borda">
-                <div class="container__reacoes">
-                  <img
-                    src="./assets/imgs/Reações.png"
-                    alt=""
-                    srcset="ícone das reações"
-                  />
-                  <span>121</span>
-                </div>
-                <span>200 comentários</span>
-              </div>
-            </article>
-            <span class="atividades__arrow">Exibir todas as atividades </span>
-          </section>
-  
-          <section id="sobre" class="section__container">
-            <h2>Sobre</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto,
-              aliquam inventore dolore nostrum ipsum temporibus repellendus odit
-              nisi ad. Asperiores dignissimos nam explicabo tempore illum
-              voluptatem? Ipsam numquam inventore consectetur?
-            </p>
-          </section>
-  
-          <section id="experiencias" class="section__container">
-            <h2>Experiências</h2>
-            <div class="container__infos">
-              <img src="./assets/imgs/empresa-foto.png" alt="" />
+            <div class="perfil__institutos">
               <div>
+                <img src="./assets/imgs/empresa-foto.png" alt="" srcset="" />
                 <h3>Empresa</h3>
-                <span>1 a 7m</span>
               </div>
-            </div>
-  
-            <ul class="experiencia__lista">
-              <li>
-                <img src="./assets/imgs/detalhe timeline.png" alt="" />
-                <div class="experiencia__descricao">
-                  <h3>Fullstack Developer</h3>
-                  <span class="experiencia__cargo">Tempo Integral</span>
-                  <span>jan de 2022 - o momento • 5 meses</span>
-                  <span>Cidade, estado e país</span>
-                </div>
-              </li>
-              <li>
-                <img src="./assets/imgs/detalhe timeline.png" alt="" />
-                <div class="experiencia__descricao">
-                  <h3>Fullstack Developer(JR)</h3>
-                  <span class="experiencia__cargo">Tempo Integral</span>
-                  <span>jun de 2021 - jan de 2022 • 8 meses</span>
-                  <span>Cidade, estado e país</span>
-                </div>
-              </li>
-              <li>
-                <img src="./assets/imgs/detalhe timeline.png" alt="" />
-                <div class="experiencia__descricao">
-                  <h3>Front-end Developer</h3>
-                  <span class="experiencia__cargo">Tempo Integral</span>
-                  <span>jan de 2021 - jun de 2021 • 6 meses</span>
-                  <span> Cidade, estado e país</span>
-                </div>
-              </li>
-            </ul>
-          </section>
-  
-          <section id="formacao" class="section__container">
-            <h2>Formação Acadêmica</h2>
-            <div class="container__infos">
-              <img src="./assets/imgs/empresa-foto (1).png" alt="" />
               <div>
+                <img
+                  src="./assets/imgs/profile-institution.png"
+                  alt=""
+                  srcset=""
+                />
                 <h3>Instituição de Ensino</h3>
-                <span class="experiencia__cargo">Nome do curso</span>
-                <span>2015 a 2019</span>
               </div>
             </div>
-          </section>
-  
-          <section id="idiomas" class="section__container">
-            <h2>Idiomas</h2>
-            <div class="idiomas__container borda">
-              <h3>Português</h3>
-              <span>Fluente ou nativo</span>
-            </div>
-            <div class="idiomas__container">
-              <h3>Inglês</h3>
-              <span>Intermediário</span>
-            </div>
-          </section>
-        </div>
-        <div class="main__direito">
-          <section id="sugestoes" class="sugestoes__container">
-            <h3>As pessoas também viram</h3>
-            <div class="container__infos margin__top">
-              <img src="./assets/imgs/pessoa1.png" alt="" />
-              <div>
-                <h3>Nome e sobrenome</h3>
-                <span>Título, cargo e Tecnologias. </span>
-                <span>Lorem ipsum dolor sit amet</span>
-                <button>Enviar mensagem</button>
+          </div>
+        </section>
+
+        <section id="destaques" class="section__container">
+          <h2>Destaques</h2>
+          <div class="destaque__flex">
+            <article class="destaque__container">
+              <div class="destaque__publi">
+                <span>Publicação</span>
+                <p>Legenda da primeira publicação do LinkedIn</p>
               </div>
-            </div>
-  
-            <div class="container__infos margin__top">
-              <img src="./assets/imgs/pessoa2.png" alt="" />
-              <div>
-                <h3>Nome e sobrenome</h3>
-                <span>Título, cargo e Tecnologias. </span>
-                <span>Lorem ipsum dolor sit amet</span>
-                <button>Enviar mensagem</button>
+              <img
+                class="destaque__img"
+                src="./assets/imgs/publicacao-1.jpg"
+                alt="Publicação Linkedin"
+              />
+              <div class="container__engajamento">
+                <div class="container__reacoes">
+                  <img
+                    src="./assets/imgs/Reações.png"
+                    alt=""
+                    srcset="ícone das reações"
+                  />
+                  <span>121</span>
+                </div>
+                <span>200 comentários</span>
               </div>
-            </div>
-  
-            <div class="container__infos margin__top">
-              <img src="./assets/imgs/pessoa3.png" alt="" />
-              <div>
-                <h3>Nome e sobrenome</h3>
-                <span>Título, cargo e Tecnologias. </span>
-                <span>Lorem ipsum dolor sit amet</span>
-                <button>Enviar mensagem</button>
+            </article>
+
+            <article class="destaque__container">
+              <div class="destaque__publi">
+                <span>Publicação</span>
+                <p>Legenda da segunda publicação do LinkedIn</p>
               </div>
-            </div>
-  
-            <div class="container__infos margin__top">
-              <img src="./assets/imgs/pessoa4.png" alt="" />
-              <div>
-                <h3>Nome e sobrenome</h3>
-                <span>Título, cargo e Tecnologias. </span>
-                <span>Lorem ipsum dolor sit amet</span>
-                <button>Enviar mensagem</button>
+              <img
+                class="destaque__img"
+                src="./assets/imgs/publicacao-2.jpg"
+                alt="Publicação Linkedin"
+              />
+              <div class="container__engajamento">
+                <div class="container__reacoes">
+                  <img
+                    src="./assets/imgs/Reações.png"
+                    alt=""
+                    srcset="ícone das reações"
+                  />
+                  <span>11</span>
+                </div>
+
+                <span>20 comentários</span>
               </div>
-            </div>
-  
-            <div class="container__infos margin__top">
-              <img src="./assets/imgs/pessoa5.png" alt="" />
-              <div>
-                <h3>Nome e sobrenome</h3>
-                <span>Título, cargo e Tecnologias. </span>
-                <span>Lorem ipsum dolor sit amet</span>
-                <button>Enviar mensagem</button>
+            </article>
+
+            <article class="destaque__container">
+              <div class="destaque__publi">
+                <span>Publicação</span>
+                <p>Legenda da terceira publicação do LinkedIn</p>
               </div>
-            </div>
-          </section>
-  
-          <section id="sugestoes__conexoes" class="sugestoes__container">
-            <h3>Pessoas que talvez você conheça</h3>
-            <div class="container__infos margin__top">
-              <img src="./assets/imgs/pessoa1.png" alt="" />
-              <div>
-                <h3>Nome e sobrenome</h3>
-                <span>Título, cargo e Tecnologias. </span>
-                <span>Lorem ipsum dolor sit amet</span>
-                <button>Enviar mensagem</button>
+              <img
+                class="destaque__img"
+                src="./assets/imgs/publicacao-3.jpg"
+                alt="Publicação Linkedin"
+              />
+              <div class="container__engajamento">
+                <div class="container__reacoes">
+                  <img
+                    src="./assets/imgs/Reações.png"
+                    alt=""
+                    srcset="ícone das reações"
+                  />
+                  <span>115</span>
+                </div>
+
+                <span>220 comentários</span>
               </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="atividades" class="section__container">
+          <h2>Atividades</h2>
+          <span class="span">??? seguidores</span>
+          <article>
+            <div class="atividade__id">
+              <span>Nome e Sobrenome publicou isso</span>
+              <span class="span--separador"></span>
+              <span>1 sem</span>
             </div>
-  
-            <div class="container__infos margin__top">
-              <img src="./assets/imgs/pessoa2.png" alt="" />
-              <div>
-                <h3>Nome e sobrenome</h3>
-                <span>Título, cargo e Tecnologias. </span>
-                <span>Lorem ipsum dolor sit amet</span>
-                <button>Enviar mensagem</button>
+            <div class="atividade__publicacao">
+              <img
+                src="./assets/imgs/atividade-1.png"
+                alt="Exemplo de Publicação 1"
+              />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                libero tempore nihil laudantium aperiam nulla dolore minima!
+                Consequuntur veritatis quibusdam quod commodi laborum quia,
+                similique sapiente iusto! Nisi reprehenderit laborum tempore!
+                Velit molestiae dolor quod accusantium veritatis eaque itaque
+                culpa animi, a alias nam? Doloribus?
+              </p>
+            </div>
+            <div class="container__engajamento borda">
+              <div class="container__reacoes">
+                <img
+                  src="./assets/imgs/Reações.png"
+                  alt=""
+                  srcset="ícone das reações"
+                />
+                <span>121</span>
               </div>
+              <span>200 comentários</span>
             </div>
-  
-            <div class="container__infos margin__top">
-              <img src="./assets/imgs/pessoa3.png" alt="" />
-              <div>
-                <h3>Nome e sobrenome</h3>
-                <span>Título, cargo e Tecnologias. </span>
-                <span>Lorem ipsum dolor sit amet</span>
-                <button>Enviar mensagem</button>
+          </article>
+          <article>
+            <div class="atividade__id">
+              <span>Nome e Sobrenome publicou isso</span>
+              <span class="span--separador"></span>
+              <span>1 sem</span>
+            </div>
+            <div class="atividade__publicacao">
+              <img
+                src="./assets/imgs/atividade-2.png"
+                alt="Exemplo de Publicação 2"
+              />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                libero tempore nihil laudantium aperiam nulla dolore minima!
+                Consequuntur veritatis quibusdam quod commodi laborum quia,
+                similique sapiente iusto! Nisi reprehenderit laborum tempore!
+                Velit molestiae dolor quod accusantium veritatis eaque itaque
+                culpa animi, a alias nam? Doloribus?
+              </p>
+            </div>
+            <div class="container__engajamento borda">
+              <div class="container__reacoes">
+                <img
+                  src="./assets/imgs/Reações.png"
+                  alt=""
+                  srcset="ícone das reações"
+                />
+                <span>121</span>
               </div>
+              <span>200 comentários</span>
             </div>
-  
-            <div class="container__infos margin__top">
-              <img src="./assets/imgs/pessoa4.png" alt="" />
-              <div>
-                <h3>Nome e sobrenome</h3>
-                <span>Título, cargo e Tecnologias. </span>
-                <span>Lorem ipsum dolor sit amet</span>
-                <button>Enviar mensagem</button>
+          </article>
+          <span class="atividades__arrow">Exibir todas as atividades </span>
+        </section>
+
+        <section id="sobre" class="section__container">
+          <h2>Sobre</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto,
+            aliquam inventore dolore nostrum ipsum temporibus repellendus odit
+            nisi ad. Asperiores dignissimos nam explicabo tempore illum
+            voluptatem? Ipsam numquam inventore consectetur?
+          </p>
+        </section>
+
+        <section id="experiencias" class="section__container">
+          <h2>Experiências</h2>
+          <div class="container__infos">
+            <img src="./assets/imgs/empresa-foto.png" alt="" />
+            <div>
+              <h3>Empresa</h3>
+              <span>1 a 7m</span>
+            </div>
+          </div>
+
+          <ul class="experiencia__lista">
+            <li>
+              <img src="./assets/imgs/detalhe timeline.png" alt="" />
+              <div class="experiencia__descricao">
+                <h3>Fullstack Developer</h3>
+                <span class="experiencia__cargo">Tempo Integral</span>
+                <span>jan de 2022 - o momento • 5 meses</span>
+                <span>Cidade, estado e país</span>
               </div>
-            </div>
-  
-            <div class="container__infos margin__top">
-              <img src="./assets/imgs/pessoa5.png" alt="" />
-              <div>
-                <h3>Nome e sobrenome</h3>
-                <span>Título, cargo e Tecnologias. </span>
-                <span>Lorem ipsum dolor sit amet</span>
-                <button>Enviar mensagem</button>
+            </li>
+            <li>
+              <img src="./assets/imgs/detalhe timeline.png" alt="" />
+              <div class="experiencia__descricao">
+                <h3>Fullstack Developer(JR)</h3>
+                <span class="experiencia__cargo">Tempo Integral</span>
+                <span>jun de 2021 - jan de 2022 • 8 meses</span>
+                <span>Cidade, estado e país</span>
               </div>
+            </li>
+            <li>
+              <img src="./assets/imgs/detalhe timeline.png" alt="" />
+              <div class="experiencia__descricao">
+                <h3>Front-end Developer</h3>
+                <span class="experiencia__cargo">Tempo Integral</span>
+                <span>jan de 2021 - jun de 2021 • 6 meses</span>
+                <span> Cidade, estado e país</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section id="formacao" class="section__container">
+          <h2>Formação Acadêmica</h2>
+          <div class="container__infos">
+            <img src="./assets/imgs/empresa-foto (1).png" alt="" />
+            <div>
+              <h3>Instituição de Ensino</h3>
+              <span class="experiencia__cargo">Nome do curso</span>
+              <span>2015 a 2019</span>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
+
+        <section id="idiomas" class="section__container">
+          <h2>Idiomas</h2>
+          <div class="idiomas__container borda">
+            <h3>Português</h3>
+            <span>Fluente ou nativo</span>
+          </div>
+          <div class="idiomas__container">
+            <h3>Inglês</h3>
+            <span>Intermediário</span>
+          </div>
+        </section>
+      </div>
+      <div class="main__direito">
+        <section id="sugestoes" class="sugestoes__container">
+          <h3>As pessoas também viram</h3>
+          <div class="container__infos margin__top">
+            <img src="./assets/imgs/pessoa1.png" alt="" />
+            <div>
+              <h3>Nome e sobrenome</h3>
+              <span>Título, cargo e Tecnologias. </span>
+              <span>Lorem ipsum dolor sit amet</span>
+              <button>Enviar mensagem</button>
+            </div>
+          </div>
+
+          <div class="container__infos margin__top">
+            <img src="./assets/imgs/pessoa2.png" alt="" />
+            <div>
+              <h3>Nome e sobrenome</h3>
+              <span>Título, cargo e Tecnologias. </span>
+              <span>Lorem ipsum dolor sit amet</span>
+              <button>Enviar mensagem</button>
+            </div>
+          </div>
+
+          <div class="container__infos margin__top">
+            <img src="./assets/imgs/pessoa3.png" alt="" />
+            <div>
+              <h3>Nome e sobrenome</h3>
+              <span>Título, cargo e Tecnologias. </span>
+              <span>Lorem ipsum dolor sit amet</span>
+              <button>Enviar mensagem</button>
+            </div>
+          </div>
+
+          <div class="container__infos margin__top">
+            <img src="./assets/imgs/pessoa4.png" alt="" />
+            <div>
+              <h3>Nome e sobrenome</h3>
+              <span>Título, cargo e Tecnologias. </span>
+              <span>Lorem ipsum dolor sit amet</span>
+              <button>Enviar mensagem</button>
+            </div>
+          </div>
+
+          <div class="container__infos margin__top">
+            <img src="./assets/imgs/pessoa5.png" alt="" />
+            <div>
+              <h3>Nome e sobrenome</h3>
+              <span>Título, cargo e Tecnologias. </span>
+              <span>Lorem ipsum dolor sit amet</span>
+              <button>Enviar mensagem</button>
+            </div>
+          </div>
+        </section>
+
+        <section id="sugestoes__conexoes" class="sugestoes__container">
+          <h3>Pessoas que talvez você conheça</h3>
+          <div class="container__infos margin__top">
+            <img src="./assets/imgs/pessoa1.png" alt="" />
+            <div>
+              <h3>Nome e sobrenome</h3>
+              <span>Título, cargo e Tecnologias. </span>
+              <span>Lorem ipsum dolor sit amet</span>
+              <button>Enviar mensagem</button>
+            </div>
+          </div>
+
+          <div class="container__infos margin__top">
+            <img src="./assets/imgs/pessoa2.png" alt="" />
+            <div>
+              <h3>Nome e sobrenome</h3>
+              <span>Título, cargo e Tecnologias. </span>
+              <span>Lorem ipsum dolor sit amet</span>
+              <button>Enviar mensagem</button>
+            </div>
+          </div>
+
+          <div class="container__infos margin__top">
+            <img src="./assets/imgs/pessoa3.png" alt="" />
+            <div>
+              <h3>Nome e sobrenome</h3>
+              <span>Título, cargo e Tecnologias. </span>
+              <span>Lorem ipsum dolor sit amet</span>
+              <button>Enviar mensagem</button>
+            </div>
+          </div>
+
+          <div class="container__infos margin__top">
+            <img src="./assets/imgs/pessoa4.png" alt="" />
+            <div>
+              <h3>Nome e sobrenome</h3>
+              <span>Título, cargo e Tecnologias. </span>
+              <span>Lorem ipsum dolor sit amet</span>
+              <button>Enviar mensagem</button>
+            </div>
+          </div>
+
+          <div class="container__infos margin__top">
+            <img src="./assets/imgs/pessoa5.png" alt="" />
+            <div>
+              <h3>Nome e sobrenome</h3>
+              <span>Título, cargo e Tecnologias. </span>
+              <span>Lorem ipsum dolor sit amet</span>
+              <button>Enviar mensagem</button>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer id="footer">
       <div class="footer__creditos">
-        <span>Desafio <a href="https://7daysofcode.io/matricula/html-css-linkedin" target="_blank">#07daysOfCode</a> desenvolvido por <a href="https://github.com/LaissaSaraiva/7-days-of-code__Linkedin" target="_blank">laissasc ♥</a>.</span>
+        <span
+          >Desafio
+          <a
+            href="https://7daysofcode.io/matricula/html-css-linkedin"
+            target="_blank"
+            >#07daysOfCode</a
+          >
+          desenvolvido por
+          <a
+            href="https://github.com/LaissaSaraiva/7-days-of-code__Linkedin"
+            target="_blank"
+            >laissasc ♥</a
+          >.</span
+        >
       </div>
     </footer>
   </body>
