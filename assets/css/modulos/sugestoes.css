@@ -22,3 +22,9 @@
   cursor: pointer;
   display: block;
 }
+
+.container__infos button:hover {
+  background-color: var(--color-texto-primario);
+  color: var(--color-input);
+  border:2px solid var(--color-input);
+}
