@@ -84,6 +84,14 @@
   color: var(--color-texto-primario);
 }
 
+.cabecalho__lista span:hover {
+  color: var(--color-texto-secundario);
+}
+
+.display {
+  display: none;
+}
+
 /* Responsividade */
 
 @media (max-width: 1024px) {
@@ -99,24 +107,33 @@
   .cabecalho__input:focus {
     width: 90%;
   }
+
 }
 
 @media (max-width: 768px) {
   .cabecalho__form input {
-    background-color: transparent;
+   width: 0px;
+  }
+  .cabecalho__lista a {
+    width: 60px;
   }
 }
 
 @media (max-width: 425px) {
+  .cabecalho__form input {
+    background-color: transparent;
+  }
+  
   .cabecalho__nav {
     justify-content: flex-start;
   }
 
-  .cabecalho__lista a {
-    width: 60px;
-  }
   .cabecalho__lista li:nth-child(n + 6) {
     display: none;
+  }
+
+  .cabecalho__form input {
+    width: 0px;
   }
 }
 
